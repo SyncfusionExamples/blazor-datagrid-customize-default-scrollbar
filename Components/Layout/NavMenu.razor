@@ -7,29 +7,18 @@
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable"  @onclick="ToggleNavMenu">
+    <nav class="nav flex-column">
         <div class="nav-item px-3">
-            @*<NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>*@
             <NavLink class="nav-link" href="datagrid-features">
                 <span class="syncfusion-blazor-icons syncfusion-blazor-icon-datagrid" aria-hidden="true"></span><span class="displayText">DataGrid</span>
             </NavLink>
         </div>
-        @*<div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>*@
     </nav>
+    
 </div>
-
 <style>
     .scroller {
         height: calc(100vh - 160px) !important;
@@ -62,7 +51,6 @@
         margin-top: 0px;
     }
 </style>
-
 @code {
     private bool collapseNavMenu = true;
 
